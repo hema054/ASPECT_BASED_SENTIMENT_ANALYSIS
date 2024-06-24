@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C Salt - Dive into Delicacies</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #fdfdfd;
+            line-height: 1.6;
+        }
+
+        header {
+            position: relative;
+            height: 400px;
+            background: url('https://m.economictimes.com/thumb/msid-88710402,width-1200,height-900,resizemode-4,imgsize-622054/restaurant-.jpg') center/cover no-repeat;
+            color: #fff;
+            font-size: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            letter-spacing: 3px;
+            text-shadow: 4px 4px 9px rgba(0, 0, 0, 0.7);
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.08);
+            border-radius: 8px;
+        }
+
+        h1, h2 {
+            font-weight: 500;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .description {
+            padding: 0 0 30px 0;
+            font-size: 1.2rem;
+            text-align: justify;
+            color: #555;
+            border-bottom: 1px solid #e0e0e0;
+            margin-bottom: 30px;
+        }
+
+        .feedback-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .feedback-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 1.2rem;
+            color: #fff;
+            background-color: #FF6347;  /* Tomato color */
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .feedback-btn:hover {
+            background-color: #FF4500; /* OrangeRed color */
+        }
+
+        /* Hover effect for images */
+        .image-slider img {
+            width: 100%;
+            border-radius: 8px;
+            margin: 15px 0;
+            transition: transform 0.3s ease;
+        }
+
+        .image-slider img:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.08);
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        C Salt
+    </header>
+
+    <div class="container">
+        <!-- Heading -->
+        <h1>Dive into Delicacies</h1>
+
+        <!-- Description -->
+        <div class="description">
+            <p><b>Welcome to C Salt, where your culinary journey begins. Originally known as Comptons, C Salt has a storied legacy, crafted by the Usina family on a pristine piece of oceanfront property in tranquil North Beach. Since its inception in 1989, the restaurant has been a symbol of the family's commitment to providing guests with an unforgettable dining experience. Here, tradition meets modernity, and each dish tells a tale of the ocean's bounty.<b></p>
+        </div>
+
+        <!-- Image Carousel -->
+        <div class="image-slider" id="imageSlider">
+            <img class="image-1" src="https://e1.pxfuel.com/desktop-wallpaper/707/802/desktop-wallpaper-the-best-indian-restaurants-in-london-south-indian-food.jpg" alt="The Reef - Image 2">
+            <img class="image-2" src="https://m.economictimes.com/thumb/msid-88710402,width-1200,height-900,resizemode-4,imgsize-622054/restaurant-.jpg" alt="The Reef - Image 3" style="display:none;">
+            <img class="image-3" src="https://media.istockphoto.com/id/183582435/photo/5-star-pakistani-and-indian-cuisine-restaurant-with-desi-ambianc.jpg?s=170667a&w=0&k=20&c=kqduuFBkpJ1FmjVDrkNlqp_MaYq_qH7e5-k-p1WnlcI=" alt="The reef-image 4" style="display:none;"> 
+        </div>
+<br><br><br>
+        
+        <!-- Feedback Button -->
+        <div class="feedback-section">
+            <center>
+                <p>At this restaurant, we strive to provide our guests with an unmatched dining experience. Whether it's the ambiance, the service, the cuisine, or any other aspect, we continuously seek opportunities to improve and innovate.
+                      <br>
+                    Your insights and opinions can play a significant role in shaping the future of our restaurant. By sharing your feedback, you'll be helping us elevate our offerings, improve our service, and cater to your preferences even better.
+                    <br>
+                    Every suggestion, every comment, and every review helps us grow, evolve, and serve you with excellence.
+                    <br>
+                    Help us make your next visit even more memorable.</p></center>
+               <center> <a href="rest1.html" class="feedback-btn">Give Feedback</a></center>
+            </div>
+    </div>
+</body>
+
+</html>
+<script>
+    // JavaScript logic to handle image change on click
+document.getElementById('imageSlider').addEventListener('click', function() {
+    let img1 = document.querySelector('.image-1');
+    let img2 = document.querySelector('.image-2');
+    let img3 = document.querySelector('.image-3');
+
+    if (img1.style.display !== 'none') {
+        img1.style.display = 'none';
+        img2.style.display = 'block';
+        img3.style.display = 'none';
+    } else if (img2.style.display !== 'none') {
+        img1.style.display = 'none';
+        img2.style.display = 'none';
+        img3.style.display = 'block';
+    } else {
+        img1.style.display = 'block';
+        img2.style.display = 'none';
+        img3.style.display = 'none';
+    }
+});
+</script>

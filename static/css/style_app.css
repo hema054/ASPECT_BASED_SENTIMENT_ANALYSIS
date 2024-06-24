@@ -1,0 +1,71 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+html { width: 100%; height:100%; overflow:hidden; }
+
+body { 
+	padding: 0%;
+	width: 100%;
+	height:100%;
+	font-family: 'Helvetica';
+	background: #ffffff; 
+	color: #c94343;
+	font-size: 24px;
+	text-align:center;
+	letter-spacing:1.4px;
+	overflow:scroll
+
+}
+
+/* .login { 
+  	max-height: 1000px;  
+    overflow-y: auto;
+	position:fixed;
+	top:20%;
+	left: 25%;
+	right:25;
+	margin: 0;
+	max-width:1500px;
+    overflow-x: auto;	
+} */
+
+.login h1 { color: #000000; text-shadow: 0 0 10px rgba(0, 0, 0, 0.3); letter-spacing:1px; text-align:center; }
+
+
+input { 
+	width: 50%; 
+	margin-bottom: 10px; 
+	/* background: rgba(0,0,0,0.3); */
+	background: none;
+	border: none;
+	outline: none;
+	padding: 10px;
+	font-size: 13px;
+	color: #fff;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+	border: 1px solid rgba(0,0,0,0.3);
+	border-radius: 4px;
+	box-shadow: inset 0 -5px 45px rgba(100,100,100,0.2), 0 1px 1px rgba(255,255,255,0.2);
+	-webkit-transition: box-shadow .5s ease;
+	-moz-transition: box-shadow .5s ease;
+	-o-transition: box-shadow .5s ease;
+	-ms-transition: box-shadow .5s ease;
+	transition: box-shadow .5s ease;
+}
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+}
+.column {
+	flex: 1;
+	padding: 20px;
+}
+/* Thin line between columns */
+.column:not(:last-child) {
+	border-right: 1px solid black;
+}
+textarea {
+	width: 100%;
+	height: 200px;
+}
