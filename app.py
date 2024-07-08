@@ -14,7 +14,8 @@ from sklearn.pipeline import Pipeline # type: ignore
 import joblib # type: ignore
 import string
 from spacy.lang.en.stop_words import STOP_WORDS # type: ignore
-from flask import Flask, request, jsonify, render_template # type: ignore
+from flask import Flask, request, jsonify, render_tempgit config --global user.email "you@example.com"
+git config --global user.name "Your Name"late # type: ignore
 from flask import session, redirect, url_for # type: ignore
 
 app = Flask(__name__)
